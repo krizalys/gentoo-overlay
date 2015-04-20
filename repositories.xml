@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<repositories version="1.0">
+    <repo quality="experimental" status="unofficial">
+        <name>krizalys-gentoo</name>
+        <description lang="en">A Portage overlay to complement the Gentoo Linux operating system.</description>
+        <homepage>https://github.com/krizalys/gentoo-overlay</homepage>
+        <owner type="person">
+            <email>support@krizalys.com</email>
+            <name>Krizalys Support</name>
+        </owner>
+        <source type="git">https://github.com/krizalys/gentoo-overlay.git</source>
+        <source type="git">git://github.com/krizalys/gentoo-overlay.git</source>
+        <source type="git">git@github.com:krizalys/gentoo-overlay.git</source>
+        <feed>https://github.com/krizalys/gentoo-overlay/commits/master.atom</feed>
+    </repo>
+</repositories>
