@@ -30,6 +30,14 @@ Packages from this overlay will then become available through [Portage][2]:
 >
 > Would you like to merge these packages? [Yes/No]
 
+Contents
+--------
+
+This overlay currently provides ebuilds for the following packages:
+
+* [Bochs][3]
+* [Composer][4]
+
 Credits
 -------
 
@@ -37,3 +45,5 @@ The Sublime Portage package is developed and maintained by Christophe Vidal.
 
 [1]: https://wiki.gentoo.org/wiki/Layman
 [2]: https://wiki.gentoo.org/wiki/Portage
+[3]: http://bochs.sourceforge.net/
+[4]: https://getcomposer.org/
