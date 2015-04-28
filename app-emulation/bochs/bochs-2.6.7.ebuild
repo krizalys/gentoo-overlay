@@ -3,35 +3,43 @@
 # @link      http://www.krizalys.com/
 #
 
-EAPI=5
+EAPI="5"
 
-WX_GTK_VER=2.8
+WX_GTK_VER="2.8"
 
 inherit eutils wxwidgets
 
 DESCRIPTION="The Open Source IA-32 Emulation Project"
 HOMEPAGE="http://bochs.sourceforge.net/"
-SRC_URI="mirror://sourceforge/bochs/${P}.tar.gz"
+SRC_URI="mirror://sourceforge/${PN}/${P}.tar.gz"
 
 LICENSE="LGPL-2.1"
 SLOT="0"
 KEYWORDS="~alpha ~amd64 ~ppc ~sparc ~x86"
 IUSE="3dnow avx debugger doc gdb ncurses readline svga sdl +smp wxwidgets vnc X +x86-64"
-REQUIRED_USE="avx? ( x86-64 )
-    gdb? ( !debugger !smp )
-    debugger? ( !gdb )"
 
-RDEPEND="X? ( x11-libs/libICE
+REQUIRED_USE="
+    avx? ( x86-64 )
+    gdb? ( !debugger !smp )
+    debugger? ( !gdb )
+"
+
+RDEPEND="
+    X? (
+        x11-libs/libICE
         x11-libs/libSM
         x11-libs/libX11
-        x11-libs/libXpm )
+        x11-libs/libXpm
+    )
     sdl? ( media-libs/libsdl )
     svga? ( media-libs/svgalib )
     wxwidgets? ( x11-libs/wxGTK:2.8[X] )
     readline? ( sys-libs/readline )
-    ncurses? ( sys-libs/ncurses )"
+    ncurses? ( sys-libs/ncurses )
+"
 
-DEPEND="${RDEPEND}
+DEPEND="
+    ${RDEPEND}
     doc? ( app-text/docbook-sgml-utils )
     X? ( x11-proto/xproto )
     sys-apps/sed

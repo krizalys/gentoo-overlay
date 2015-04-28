@@ -3,7 +3,7 @@
 # @link      http://www.krizalys.com/
 #
 
-EAPI=5
+EAPI="5"
 
 inherit versionator
 
@@ -24,7 +24,7 @@ RDEPEND="
 
 src_unpack()
 {
-    S=${WORKDIR}
+    S="${WORKDIR}"
 }
 
 src_prepare()
