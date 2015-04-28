@@ -50,8 +50,8 @@ src_prepare()
     sed -i "s:^docdir.*:docdir = ${EPREFIX}/usr/share/doc/${PF}:" \
         Makefile.in || die
 
-    epatch "${FILESDIR}"/linux-compat-4.x.patch
-    epatch "${FILESDIR}"/${P}-wx.patch
+    epatch "${FILESDIR}/linux-compat-4.x.patch"
+    epatch "${FILESDIR}/${P}-wx.patch"
     epatch_user
 }
 
