@@ -30,5 +30,10 @@ Packages from this overlay will then become available through [Portage][2]:
 >
 > Would you like to merge these packages? [Yes/No]
 
+Credits
+-------
+
+The Sublime Portage package is developed and maintained by Christophe Vidal.
+
 [1]: https://wiki.gentoo.org/wiki/Layman
 [2]: https://wiki.gentoo.org/wiki/Portage
