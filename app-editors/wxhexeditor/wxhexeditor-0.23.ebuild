@@ -2,8 +2,6 @@
 # @copyright 2008-2015 Krizalys. All rights reserved.
 # @link      http://www.krizalys.com/
 #
-# mkdir /tmp/root; mkdir /tmp/portage
-# ROOT="/tmp/root" PORTAGE_TMPDIR="/tmp/portage" ebuild wxhexeditor-0.23.ebuild manifest clean merge
 
 EAPI="5"
 
