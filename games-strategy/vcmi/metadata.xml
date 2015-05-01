@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+    <maintainer>
+        <email>support@krizalys.com</email>
+    </maintainer>
+    <use>
+        <flag name="debug">Enable debugging</flag>
+        <flag name="editor">Enable compilation of map editor</flag>
+        <flag name="erm">Enable compilation of ERM scripting module</flag>
+        <flag name="launcher">Enable compilation of launcher</flag>
+        <flag name="pch">Enable compilation using precompiled headers</flag>
+        <flag name="sdl2">Use SDL2 for compilation instead of SDL 1.2</flag>
+        <flag name="test">Enable compilation of unit tests</flag>
+    </use>
+</pkgmetadata>
