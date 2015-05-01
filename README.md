@@ -7,14 +7,15 @@ operating system.
 Getting started
 ---------------
 
-This overlay may be added to your system using [Layman][1]. Run the following
-command (as root):
+This overlay may be added to your system using [Layman][layman]. Run the
+following command (as root):
 
 ```
 # layman -o https://raw.github.com/krizalys/gentoo-overlay/master/repositories.xml -f -a krizalys-gentoo
 ```
 
-Packages from this overlay will then become available through [Portage][2]:
+Packages from this overlay will then become available through
+[Portage][portage]:
 
 ```
 # emerge -av1 bochs
@@ -35,17 +36,17 @@ Contents
 
 This overlay currently provides ebuilds for the following packages:
 
-* [Bochs][3]
-* [Composer][4]
-* [wxHexEditor][5]
+* [Bochs][bochs]
+* [Composer][composer]
+* [wxHexEditor][wxhexeditor]
 
 Credits
 -------
 
 The Sublime Portage package is developed and maintained by Christophe Vidal.
 
-[1]: https://wiki.gentoo.org/wiki/Layman
-[2]: https://wiki.gentoo.org/wiki/Portage
-[3]: http://bochs.sourceforge.net/
-[4]: https://getcomposer.org/
-[5]: http://www.wxhexeditor.org/
+[layman]:      https://wiki.gentoo.org/wiki/Layman
+[portage]:     https://wiki.gentoo.org/wiki/Portage
+[bochs]:       http://bochs.sourceforge.net/
+[composer]:    https://getcomposer.org/
+[wxhexeditor]: http://www.wxhexeditor.org/
