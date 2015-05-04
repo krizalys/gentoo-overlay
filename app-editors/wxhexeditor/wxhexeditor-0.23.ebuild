@@ -36,7 +36,8 @@ pkg_pretend()
         || die "${PN} uses OpenMP libraries. Please use an OpenMP-capable compiler."
 }
 
-src_prepare() {
-    epatch "${FILESDIR}"/${P}-makefile.patch
+src_prepare()
+{
+    epatch "${FILESDIR}/${P}-makefile.patch"
     epatch_user
 }
