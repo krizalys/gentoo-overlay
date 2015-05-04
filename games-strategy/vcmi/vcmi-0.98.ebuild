@@ -58,6 +58,11 @@ MAKEOPTS="-j1"
 
 SHARE_REL="usr/share/${PN}"
 
+pkg_preinst()
+{
+    games_pkg_preinst
+}
+
 src_prepare()
 {
     cmake-utils_src_prepare
@@ -89,6 +94,7 @@ src_install()
 
 pkg_postinst()
 {
+    games_pkg_postinst
     einfo "${P} has been installed. To run the client, you need to copy manually the Data,"
     einfo "Maps, and MP3 directories from the Heroes III: Shadow of Death or Complete edition"
     einfo "CD-ROM(s) to /${SHARE_REL}."
