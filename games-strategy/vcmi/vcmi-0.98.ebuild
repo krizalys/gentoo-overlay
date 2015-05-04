@@ -23,7 +23,7 @@ KEYWORDS="~amd64"
 IUSE="debug editor erm +launcher +pch +sdl2 test"
 
 RDEPEND="
-    >=dev-libs/boost-1.48[nls]
+    dev-libs/boost:0/1.56.0[nls]
     media-video/ffmpeg
     sys-libs/zlib[minizip]
     sdl2? (
