@@ -57,9 +57,6 @@ src_prepare()
 
 src_configure()
 {
-    use wxwidgets && \
-        need-wxwidgets unicode
-
     econf \
         --enable-all-optimizations \
         --enable-idle-hack \
