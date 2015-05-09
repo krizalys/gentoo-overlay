@@ -73,7 +73,7 @@ src_configure()
         --enable-pcidev \
         --enable-pnic \
         --enable-raw-serial \
-        --enable-sb16=linux \
+        --enable-sb16 \
         --enable-usb \
         --enable-usb-ohci \
         --enable-usb-xhci \
