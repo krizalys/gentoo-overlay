@@ -45,8 +45,6 @@ src_unpack()
 
 src_install()
 {
-    #echo $P
-    #die
     local dir="/opt/${P}"
     dodir "${dir}"
     cp -ar ./* "${ED}${dir}" || die
