@@ -14,8 +14,8 @@ RUBY_FAKEGEM_TASK_DOC=""
 
 inherit ruby-fakegem eutils
 
-DESCRIPTION="A tool for building and distributing virtual machines using VirtualBox"
-HOMEPAGE="https://vagrantup.com/"
+DESCRIPTION="A tool for building and distributing virtual machines"
+HOMEPAGE="https://www.vagrantup.com/"
 SRC_URI="https://github.com/mitchellh/vagrant/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="MIT"
@@ -29,10 +29,7 @@ RDEPEND="
     ${RDEPEND}
     app-arch/libarchive
     net-misc/curl
-    !x64-macos? ( || (
-        app-emulation/virtualbox
-        app-emulation/virtualbox-bin
-    ) )
+    !app-emulation/vagrant
 "
 
 ruby_add_bdepend "
