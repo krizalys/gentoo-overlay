@@ -38,6 +38,7 @@ This overlay currently provides ebuilds for the following packages:
 
 * [Bochs][bochs]
 * [Composer][composer]
+* [OpenTTD][openttd]
 * [Vagrant][vagrant]
 * [VCMI][vcmi]
 * [wxHexEditor][wxhexeditor]
@@ -51,6 +52,7 @@ The Sublime Portage package is developed and maintained by Christophe Vidal.
 [portage]:     https://wiki.gentoo.org/wiki/Portage
 [bochs]:       http://bochs.sourceforge.net/
 [composer]:    https://getcomposer.org/
+[openttd]:     https://www.openttd.org/
 [vagrant]:     https://www.vagrantup.com/
 [vcmi]:        http://vcmi.eu/
 [wxhexeditor]: http://www.wxhexeditor.org/
