@@ -1,0 +1,25 @@
+#!/sbin/runscript
+
+#
+# @copyright 2008-2015 Krizalys. All rights reserved.
+# @link      http://www.krizalys.com/
+#
+
+depend()
+{
+	need net
+}
+
+start()
+{
+	ebegin "Starting OpenTTD dedicated server"
+	start-stop-daemon --start -q --exec /usr/games/bin/openttd -- -D -f > /dev/null
+	eend $?
+}
+
+stop()
+{
+	ebegin "Stopping OpenTTD dedicated server"
+	start-stop-daemon --stop -q -n openttd
+	eend $?
+}
