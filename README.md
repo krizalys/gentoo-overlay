@@ -21,6 +21,7 @@ Packages from this overlay will then become available through
 # emerge -av1 bochs
 ```
 
+> ```
 > These are the packages that would be merged, in order:
 >
 > Calculating dependencies... done!
@@ -30,6 +31,7 @@ Packages from this overlay will then become available through
 > Total: 1 package (1 new), Size of downloads: 4,928 KiB
 >
 > Would you like to merge these packages? [Yes/No]
+> ```
 
 Contents
 --------
