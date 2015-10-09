@@ -92,9 +92,10 @@ src_configure()
         ${myconf}
     "
 
-    if use_enable usb; then
+    if use usb; then
         conf="${conf} --enable-usb --enable-usb-ohci --enable-usb-xhci"
     else
+
         conf="${conf} --disable-usb --disable-usb-ohci --disable-usb-xhci"
     fi
 
