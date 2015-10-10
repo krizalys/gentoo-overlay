@@ -5,7 +5,7 @@
 
 EAPI="5"
 
-WX_GTK_VER="3.0"
+WX_GTK_VER="2.8"
 
 inherit eutils wxwidgets
 
@@ -33,7 +33,7 @@ RDEPEND="
     )
     sdl? ( media-libs/libsdl )
     svga? ( media-libs/svgalib )
-    wxwidgets? ( x11-libs/wxGTK:3.0[X] )
+    wxwidgets? ( x11-libs/wxGTK:2.8[X] )
     readline? ( sys-libs/readline )
     ncurses? ( sys-libs/ncurses )
 "

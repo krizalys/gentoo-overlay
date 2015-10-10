@@ -43,11 +43,13 @@ DEPEND="
     doc? ( app-text/docbook-sgml-utils )
     X? ( x11-proto/xproto )
     sys-apps/sed
-    >=app-text/opensp-1.5"
+    >=app-text/opensp-1.5
+"
 
 src_prepare()
 {
-    sed -i "s:^docdir.*:docdir = ${EPREFIX}/usr/share/doc/${PF}:" \
+    sed -i \
+        -e "s:^docdir.*:docdir = ${EPREFIX}/usr/share/doc/${PF}:" \
         Makefile.in || die
 
     epatch "${FILESDIR}/linux-compat-4.x.patch"

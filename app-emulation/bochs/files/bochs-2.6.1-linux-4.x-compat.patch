@@ -1,0 +1,17 @@
+--- a/configure
++++ b/configure
+@@ -22096,12 +22096,12 @@
+               PCIDEV_MODULE_MAKE_ALL="all-kernel24"
+               KERNEL_MODULE_SUFFIX="o"
+               ;;
+-            2.6*|3.*)
++            2.6*|3.*|4.*)
+               PCIDEV_MODULE_MAKE_ALL="all-kernel26"
+               KERNEL_MODULE_SUFFIX="ko"
+               ;;
+             *)
+-              as_fn_error $? "Linux kernel 2.4, 2.6 or 3.x is required for PCI host device mapping" "$LINENO" 5
++              as_fn_error $? "Linux kernel 2.4, 2.6, 3.x or 4.x is required for PCI host device mapping" "$LINENO" 5
+               ;;
+           esac
+           KERNELDIR="/lib/modules/$linux_version/build"

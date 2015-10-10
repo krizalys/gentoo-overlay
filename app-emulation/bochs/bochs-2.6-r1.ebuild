@@ -3,15 +3,15 @@
 # @link      http://www.krizalys.com/
 #
 
-EAPI="5"
+EAPI="4"
 
-WX_GTK_VER="3.0"
+WX_GTK_VER="2.8"
 
 inherit eutils wxwidgets
 
-DESCRIPTION="The Open Source IA-32 Emulation Project"
+DESCRIPTION="LGPL-ed pc emulator"
 HOMEPAGE="http://bochs.sourceforge.net/"
-SRC_URI="mirror://sourceforge/${PN}/${P}.tar.gz"
+SRC_URI="mirror://sourceforge/bochs/${P}.tar.gz"
 
 LICENSE="LGPL-2.1"
 SLOT="0"
@@ -33,7 +33,7 @@ RDEPEND="
     )
     sdl? ( media-libs/libsdl )
     svga? ( media-libs/svgalib )
-    wxwidgets? ( x11-libs/wxGTK:3.0[X] )
+    wxwidgets? ( x11-libs/wxGTK:2.8[X] )
     readline? ( sys-libs/readline )
     ncurses? ( sys-libs/ncurses )
 "
@@ -58,6 +58,9 @@ src_prepare()
 
 src_configure()
 {
+    use wxwidgets && \
+        need-wxwidgets unicode
+
     econf \
         --enable-all-optimizations \
         --enable-idle-hack \
@@ -67,6 +70,7 @@ src_configure()
         --enable-disasm \
         --enable-e1000 \
         --enable-gameport \
+        --enable-iodebug \
         --enable-monitor-mwait \
         --enable-ne2000 \
         --enable-plugins \
@@ -74,7 +78,7 @@ src_configure()
         --enable-pcidev \
         --enable-pnic \
         --enable-raw-serial \
-        --enable-sb16 \
+        --enable-sb16=linux \
         --enable-usb \
         --enable-usb-ohci \
         --enable-usb-xhci \
