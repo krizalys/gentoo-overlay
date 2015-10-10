@@ -52,7 +52,7 @@ src_prepare()
         -e "s:^docdir.*:docdir = ${EPREFIX}/usr/share/doc/${PF}:" \
         Makefile.in || die
 
-    epatch "${FILESDIR}/linux-compat-4.x.patch"
+    epatch "${FILESDIR}/${P}-linux-4.x-compat.patch"
     epatch_user
 }
 
