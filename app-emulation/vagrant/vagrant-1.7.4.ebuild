@@ -29,7 +29,7 @@ RDEPEND="
     ${RDEPEND}
     app-arch/libarchive
     net-misc/curl
-    !app-emulation/vagrant
+    !app-emulation/vagrant-bin
 "
 
 ruby_add_bdepend "
